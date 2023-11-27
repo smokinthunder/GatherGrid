@@ -1,4 +1,4 @@
-HOW TO SETUP THIS FRONTEND PROJECT ???
+#HOW TO SETUP THIS FRONTEND PROJECT ???#
 
 # Select branch frontend
 # run   git clone <URL>   in terminal of your computer.
