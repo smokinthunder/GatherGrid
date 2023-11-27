@@ -1,0 +1,12 @@
+{%include 'navigation.html'%}
+<h1>
+    Events
+</h1>
+{% for event in Events %}
+<h2>
+    {{event.event_name | upper }}
+</h2>
+<p>
+    {{event.event_description}}
+</p>
+{% endfor %}

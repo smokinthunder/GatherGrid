@@ -1,0 +1,12 @@
+{%include 'navigation.html'%}
+
+<h1>
+    Add Events
+</h1>
+<form method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <input type="text" name="event_name" placeholder="Event Name">
+    <input type="text" name="event_description" placeholder="Description">
+    <button type="submit">Add</button>
+    <button type="reset">reset</button>
+</form>
