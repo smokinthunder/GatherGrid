@@ -1,6 +1,6 @@
 {%include 'navigation.html'%}
 <h1>
-    Events
+    My Events
 </h1>
 {% for event in Events %}
 <h2>
@@ -12,5 +12,7 @@
 <p>
     Organised by {{event.event_organiser}}
 </p>
+<a href="">Edit</a>
+<a href="">Delete</a>
 
 {% endfor %}

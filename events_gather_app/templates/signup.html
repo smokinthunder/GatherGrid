@@ -1,0 +1,18 @@
+{%include 'navigation.html'%}
+
+<h1>Sign Up</h1>
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+  <input type="text" placeholder="First Name" name="first_name" />
+  <input type="text" placeholder="Second Name" name="second_name" /><br />
+  <input type="text" placeholder="User Name" name="user_name" /><br />
+  <input type="email" placeholder="Email" name="email" /><br />
+  <input type="password" placeholder="Password" name="password" /><br />
+  <button type="submit">Create</button>
+  <button type="reset">Clear</button><br />
+</form>
+{% comment %} <p>
+    {% if user %}
+    New User Created with username {{ user.username }}
+    {% endif %}
+</p> {% endcomment %}

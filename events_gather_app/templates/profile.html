@@ -1,0 +1,14 @@
+{%include 'navigation.html'%}
+
+<h1>
+    Profile
+</h1>
+<h3>
+    Hi {{user.first_name}} <br>
+    Username: {{user.username}} <br>
+    Email: {{user.email}} <br>
+    <a href="{% url 'logout'%}">Logout</a><br>
+    <a href="{% url 'my_events'%}">My Events</a><br>
+    <a href="">Edit Profile</a><br>
+
+</h3>

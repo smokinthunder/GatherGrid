@@ -21,6 +21,13 @@ from events_gather_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',views.home,name='home'),
-    path('',views.home,name='home'),
+    path('',views.home,name='login'),
     path('add_events/',views.add_events,name='add_events'),
+    path('login/',views.login,name='login'),
+    path('signup/',views.signup,name='signup'),
+    path('logout/',views.logout,name='logout'),
+    path('profile/',views.profile,name='profile'),
+    path('my_events/',views.my_events,name='my_events')
+    
+
 ]
